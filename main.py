@@ -11,9 +11,6 @@ def my_function(divident, divider):
         divident = divident - divider
         counter = counter + 1
 
-    quotient = counter
-    remainder = divident
-
     return counter, remainder
 
 # We have a function named my_functions
@@ -25,7 +22,6 @@ factors = []
 while (n != 1):
     if my_function(n, d)[1] ==0:
         n = my_function(n, d)[0]
-        # print(n)
         factors.append(d)
     else:
         d = d +1
