@@ -5,19 +5,16 @@ factors = []
 
 def my_function(divident, divider):
     counter = 0
-    remainder = 0
 
     while divident>=divider:
         divident = divident - divider
         counter = counter + 1
 
-    return counter, remainder
+    return counter, divident
 
 # We have a function named my_functions
 # which takes two arguments divident and divider
 # and returns quotient and remainder
-
-factors = []
 
 while (n != 1):
     if my_function(n, d)[1] ==0:
